@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: statusquarkusio-azmf
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-ghwm-tenant/status-quarkus-io/statusquarkusio-azmf@sha256:aa48947e4957dcbc44d2ae6fe3672b9e7c232919f8416b1d26c5206c046ae001
+        name: my-java-quarkus
+        resources: {}
+status: {}
